@@ -1,0 +1,15 @@
+cache/
+out/
+node_modules/
+.DS_Store
+broadcast/
+brownie-config.yaml
+src/build/
+src/.DS_Store
+src/scripts/
+lib/.DS_Store
+lib/
+.DS_Store
+
+.env
+.env.local
