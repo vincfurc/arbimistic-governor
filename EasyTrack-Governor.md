@@ -12,7 +12,7 @@ Arbitrum currently operates a single quorum-based governor type for voting throu
 
 This easy-tack governor works with a Safe to make a veto council. The Safe is the council. The council would have the proposer role on the governor, so it could make proposals. Voters can veto those proposals.
 
-To support this flow, this governor inverts the voting rules for passing proposals.  Instead of voting “in favor” to pass a vote, voters can only vote "against" proposals. If enough "against" votes are cast, the proposal is blocked. This new easy-track governor smart contract can then be added to Tally so that it can be selected when creating new proposals.
+To support this flow, this governor inverts the voting rules for passing proposals. Instead of voting “in favor” to pass a vote, voters can only vote "against" proposals. If enough "against" votes are cast, the proposal is blocked. This new easy-track governor smart contract can then be added to Tally so that it can be selected when creating new proposals.
 
 ### Proposed Solution
 
