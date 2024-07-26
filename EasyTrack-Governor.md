@@ -8,7 +8,11 @@
 
 ### Solution Summary
 
-Arbitrum currently operates a single quorum-based governor type for voting through Tally, and the easy-track module consists of a modified version of the Governor smart contract. The proposal state transition would work differently from the standard Governor, and instead of having minimum 3-5% of all tokens to vote “in favor”, you would need objections votes to reach the predetermined threhsold to block the proposal from succeeding. This new easy-track governor smart contract can then be added to Tally so that it can be selected when creating new proposals.
+Arbitrum currently operates a single quorum-based governor type for voting through Tally, and the easy-track module consists of a modified version of the Governor smart contract. 
+
+This easy-tack governor works with a Safe to make a veto council. The Safe is the council. The council would have the proposer role on the governor, so it could make proposals. Voters can veto those proposals.
+
+To support this flow, this governor inverts the voting rules for passing proposals. Instead of voting “in favor” to pass a vote, voters can only vote "against" proposals. If enough "against" votes are cast, the proposal is blocked. This new easy-track governor smart contract can then be added to Tally so that it can be selected when creating new proposals.
 
 ### Proposed Solution
 
